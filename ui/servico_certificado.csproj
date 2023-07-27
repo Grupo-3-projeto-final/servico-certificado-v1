@@ -19,8 +19,8 @@
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-    <Reference Include="IdentityLib">
-      <HintPath>Libs\IdentityLib.dll</HintPath>
+    <Reference Include="identityLibMinimal">
+      <HintPath>Libs\identityLibMinimal.dll</HintPath>
     </Reference>
   </ItemGroup>
 

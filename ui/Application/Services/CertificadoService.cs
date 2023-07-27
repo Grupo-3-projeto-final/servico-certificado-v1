@@ -4,7 +4,7 @@ using servico_certificado.Infrastructure.Contexto;
 using servico_certificado.Infrastructure.Repositories;
 using servico_certificado.Infrastructure.Utilities;
 
-namespace servico_certificado.Application.Entities
+namespace servico_certificado.Application.Services
 {
     public class CertificadoService
     {
@@ -19,7 +19,7 @@ namespace servico_certificado.Application.Entities
 
         public byte[] EmitirCertificado(string nome, string curso, string cpf)
         {
-        return certificadoPDFGenerator.GerarCertificado(nome, curso, cpf);
+            return certificadoPDFGenerator.GerarCertificado(nome, curso, cpf);
         }
 
         public async Task SalvarDadosCertificado(CertificadoAluno dadosCertificado)
