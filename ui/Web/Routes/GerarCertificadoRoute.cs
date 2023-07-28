@@ -34,7 +34,7 @@ namespace servico_certificado.Web.Routes
                     Cpf = dados.CPF
                 };
 
-                _certificado.SalvarDadosCertificado(dadosCertificado).Wait();
+                _certificado.SalvarDadosCertificado(dadosCertificado);
 
                 context.Response.ContentType = "application/pdf";
                 context.Response.Headers.Add("Content-Disposition", "attachment; filename=Certificado.pdf");
