@@ -5,18 +5,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("CorsPolicy", builder => builder
-        .AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader());
-});
+// builder.Services.AddCors(options =>
+// {
+//     options.AddPolicy("CorsPolicy", builder => builder
+//         .AllowAnyOrigin()
+//         .AllowAnyMethod()
+//         .AllowAnyHeader());
+// });
 
 
 var app = builder.Build();
 
-app.UseCors("CorsPolicy");
+// app.UseCors("CorsPolicy");
 
 if (app.Environment.IsDevelopment())
 {
