@@ -21,7 +21,8 @@ namespace servico_certificado.Infrastructure.Utilities
                 using (var document = new Document(pdf, PageSize.A4.Rotate()))
                 {
                     // Carregue a imagem do logo
-                    string logoFilePath = "/home/ubuntu/imagem-test/logo/PlanoFundoCertificado.png";
+                    //string logoFilePath = "/home/ubuntu/imagem-test/logo/PlanoFundoCertificado.png";
+                     string logoFilePath = "C:/TestePDF/logo/PlanoFundoCertificado.png";
                     Image logo = new Image(ImageDataFactory.Create(logoFilePath));
 
                     // Obtenha o tamanho da página
